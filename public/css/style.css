@@ -1,0 +1,276 @@
+/* BODY */
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* NAVIGATION BAR  */
+
+.navbar {
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+}
+
+.logo {
+    height: 72px !important;
+}
+
+.navbar-toggler {
+    border: none;
+    border-radius: 0;
+}
+
+
+/* HOME-PAGE */
+
+
+/* HERO-SECTION */
+
+h3,
+h1,
+p,
+h2 {
+    font-family: "Nunito", sans-serif !important;
+    font-weight: 800 !important;
+}
+
+.hero-info {
+    font-family: "Catamaran", sans-serif;
+    font-weight: 500 !important;
+}
+
+.home-img {
+    height: 85vh;
+}
+
+@media only screen and (max-width: 600px) {
+    h1,
+    h4,
+    p {
+        font-size: 24px !important;
+    }
+    button {
+        font-size: 16px !important;
+    }
+    .hero-info {
+        font-size: 14px !important;
+        align-self: flex-start;
+        margin-top: 35px;
+    }
+    .home-img {
+        height: 30vh;
+        align-self: center;
+        text-align: center;
+        margin-top: 25px;
+    }
+    .hero {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+}
+
+
+/* EXPERIENCE-SECTION-START */
+
+.row a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.row a {
+    text-decoration: none;
+    color: black;
+}
+
+.card {
+    overflow: hidden;
+    font-family: "Karla", sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-body {
+    transition: 250ms ease;
+}
+
+li {
+    text-overflow: ellipsis !important;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.box {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    transition: 250ms ease;
+}
+
+.card:hover .card-body {
+    transform: translateY(-100%);
+    background-color: white;
+}
+
+.card:hover .box {
+    opacity: 1;
+    transform: translateY(-20%);
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    overflow: hidden;
+}
+
+.card:hover li {
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+}
+
+.special-img {
+    object-fit: cover;
+    height: 215px !important;
+}
+
+
+/*  EXPERIENCE-SECTION-END */
+
+
+/* FOOTER */
+
+#footer {
+    background-repeat: #fff;
+    height: 240px;
+    font-family: "Montserrat";
+    text-align: center;
+}
+
+.f oot {
+    margin: 90px 10px 0;
+}
+
+.last {
+    margin-top: 23px;
+    font-weight: 1000px;
+}
+
+
+/*PRODUCTS - SECTION - START*/
+
+.inclusion {
+    list-style: none;
+}
+
+.inclusion-icon {
+    height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/*PRODUCTS - SECTION - END*/
+
+
+/* Cards */
+
+
+/* .card {
+    transition: 400ms all;
+    width: 18rem;
+    border-radius: 8px !important;
+    box-shadow: 0 0 10px 0 rgba(100, 100, 100, 0.26);
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.img-fluid {
+    
+border-radius: 8px 8px 0 0;
+}
+
+.card-btn {
+
+    border-radius: 0 0 8px 8px !important;
+}
+
+.special-img {
+    object-fit: cover;
+    height: 215px !important;
+} */
+
+
+/* Experiment */
+
+
+/* .card {
+    width: 18rem;
+    color: white;
+    position: relative;
+}
+
+.card-body {
+    width: 17.5rem;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: none;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.card-body>* {
+    transform: translateY(80px);
+    transition: transform 0.5s;
+}
+
+.card:hover>* {
+    transform: translateY(0);
+}
+
+.card-body:hover>* {
+    transform: translateY(0);
+}
+
+.c  ard-body:hover {
+        opacity: 1;
+}    
+    
+.c  ard-body li {
+    list-style: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+      white-space: nowrap;
+   } */
+
+@media only screen and (max-width: 500px) {
+    .d-flex {
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+}
+
+@media all and (min-width: 450px) {
+    .d-flex {
+        align-self: center;
+        align-items: center;
+    }
+}
+
+@media all and (max-width: 450px) {
+    .d-flex {
+        justify-content: center;
+        align-self: center;
+        align-items: center;
+    }
+}
